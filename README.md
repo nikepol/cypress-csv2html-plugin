@@ -28,6 +28,7 @@ Then use the custom command `cy.csv2html`
 cy.csv2html('/fixtures/example.csv')
 ```
 You can use data-cy for your tests
+```
 
 ```js
 cy.get('[data-cy="csv-table-container"]') // Check the table values
