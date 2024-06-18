@@ -1,4 +1,4 @@
-<h2 align=center> cypress-csv2html-plugin [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app] ![cypress version](https://img.shields.io/badge/cypress-13.11.0-brightgreen)</h2>
+<h2 align=center> cypress-csv2html-plugin </h2>
 <p align="center">
 
 A simple plugin to wrap a CSV file into HTML
@@ -21,7 +21,7 @@ Include from your Cypress support file or individual spec
 import 'cypress-csv2html-plugin/commands'
 ```
 
-Then use the custom command `cy.getByLabel`
+Then use the custom command `cy.csv2html`
 
 ```js
 cy.csv2html('/fixtures/example.csv')
