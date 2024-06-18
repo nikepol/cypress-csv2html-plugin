@@ -2,7 +2,7 @@
 
 import { csvToHtmlTable } from "../src/csv2html";
 
-Cypress.Commands.add("convertCsvToHtmlTable", (csvFilePath) => {
+Cypress.Commands.add("csv2html", (csvFilePath) => {
   cy.readFile(csvFilePath, { encoding: "utf8" }).then((csvData) => {
     const htmlTable = csvToHtmlTable(csvData);
 
@@ -22,5 +22,9 @@ Cypress.Commands.add("convertCsvToHtmlTable", (csvFilePath) => {
 
       doc.body.appendChild(container);
     });
+
+    // Wait for the table to render before making assertions
+    cy.get('[data-test="csv-table-container"] table').should("exist");
+    cy.get('[data-test="csv-table"] tr').should("have.length.at.least", 2); // Ensure at least two rows are present
   });
 });

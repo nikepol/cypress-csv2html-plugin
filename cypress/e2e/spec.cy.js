@@ -1,8 +1,8 @@
-const { createHtmlContainer } = require("../src/csv2html");
+require("../src");
 
 describe("template spec", () => {
   it("passes", () => {
-    cy.convertCsvToHtmlTable("cypress/fixtures/customers-100.csv");
+    cy.csv2html("cypress/fixtures/customers-100.csv");
 
     cy.get("#csv-table-container") // Check the table values
       .should("contain", "Index")
