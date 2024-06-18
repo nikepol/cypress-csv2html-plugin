@@ -1,7 +1,9 @@
 <h2 align=center> cypress-csv2html-plugin </h2>
 <p align="center">
 
-A simple plugin to wrap a CSV file into HTML
+A simple plugin to wrap a CSV file into HTML, this plugin also generates a **data-test**```js
+import 'cypress-csv2html-plugin/commands'
+```
 
 ## install
 
@@ -12,9 +14,6 @@ yarn add -D cypress-csv2html-plugin
 ```
 
 ## use
-
-### Simple
-
 Include from your Cypress support file or individual spec
 
 ```js
