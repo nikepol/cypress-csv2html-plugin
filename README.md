@@ -32,15 +32,6 @@ To get IntelliSense working with the default custom command `cy.csv2html` includ
 /// <reference types="cypress-csv2html-plugin" />
 ```
 
-For example in VSCode you will see
-
-![IntelliSense](images/intellisense.png)
-
-[ci image]: https://github.com/bahmutov/cypress-get-by-label/workflows/ci/badge.svg?branch=main
-[ci url]: https://github.com/bahmutov/cypress-get-by-label/actions
-[renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
-[renovate-app]: https://renovateapp.com/
-
 ## Small print
 
 Author: Nikita Polyakov
