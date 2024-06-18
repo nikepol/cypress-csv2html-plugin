@@ -1,4 +1,4 @@
-<h2 align=center># cypress-csv2html-plugin [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app] ![cypress version](https://img.shields.io/badge/cypress-13.11.0-brightgreen)</h2>
+<h2 align=center> cypress-csv2html-plugin [![ci status][ci image]][ci url] [![renovate-app badge][renovate-badge]][renovate-app] ![cypress version](https://img.shields.io/badge/cypress-13.11.0-brightgreen)</h2>
 <p align="center">
 
 A simple plugin to wrap a CSV file into HTML
