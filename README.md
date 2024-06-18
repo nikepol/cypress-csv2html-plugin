@@ -9,6 +9,10 @@ A simple plugin to wrap a CSV file into HTML, this plugin also generates a **dat
 npm i -D cypress-csv2html-plugin
 # or
 yarn add -D cypress-csv2html-plugin
+# or
+pnpm add cypress-csv2html-plugin
+# or
+bun add -D cypress-csv2html-plugin
 ```
 
 ## use
