@@ -18,3 +18,4 @@ import './commands'
 
 const { csv2html } = require('../../src')
 csv2html()
+
