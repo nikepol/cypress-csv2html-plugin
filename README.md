@@ -16,8 +16,7 @@ bun add -D cypress-csv2html-plugin
 ```
 
 ## use
-Include from your Cypress support file or individual spec
-
+Import into e2e.js
 ```js
 import { csv2html } from "cypress-csv2html-plugin";
 csv2html();
