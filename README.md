@@ -19,7 +19,8 @@ bun add -D cypress-csv2html-plugin
 Include from your Cypress support file or individual spec
 
 ```js
-import 'cypress-csv2html-plugin/commands'
+import { csv2html } from "cypress-csv2html-plugin";
+csv2html();
 ```
 
 Then use the custom command `cy.csv2html`
