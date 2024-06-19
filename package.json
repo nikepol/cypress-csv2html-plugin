@@ -1,0 +1,37 @@
+{
+  "name": "cypress-csv2html-plugin",
+  "version": "1.0.2",
+  "description": "A simple plugin to generate HTML table from CSV file by using cy.csv2html('/fixtures/yourfile.csv'), all the data is randomly generated",
+  "main": "src",
+  "files": [
+    "src",
+    "commands.js"
+  ],
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "semantic-release": "semantic-release",
+    "badges": "npx -p dependency-version-badge update-badge cypress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikepol/cypress-csv2html-plugin.git"
+  },
+  "keywords": [
+    "cypress",
+    "cypress-custom-command"
+  ],
+  "author": "Nikita Polyakov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikepol/cypress-csv2html-plugin/issues"
+  },
+  "homepage": "https://github.com/nikepol/cypress-csv2html-plugin#readme",
+  "devDependencies": {
+    "cypress": "^13.11.0",
+    "prettier": "^3.3.2",
+    "semantic-release": "^24.0.0",
+    "typescript": "^5.4.5"
+  }
+}
