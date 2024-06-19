@@ -26,7 +26,7 @@ csv2html();
 Then use the custom command `cy.csv2html`
 
 ```js
-cy.csv2html('/fixtures/example.csv')
+cy.csv2html('cypress/fixtures/example.csv')
 ```
 You can use **data-cy** for your tests
 ```
