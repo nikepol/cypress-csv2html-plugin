@@ -7,6 +7,7 @@
     "src",
     "commands.js"
   ],
+  "types": "src",
   "scripts": {
     "test": "cypress run",
     "cy:open": "cypress open",
