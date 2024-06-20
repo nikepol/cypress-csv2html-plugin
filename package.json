@@ -1,13 +1,12 @@
 {
   "name": "cypress-csv2html-plugin",
-  "version": "2.1.0",
-  "description": "A simple plugin to generate HTML table from CSV file by using cy.csv2html('cypress/fixtures/yourfile.csv'), all the data in the example is randomly generated",
+  "version": "2.0.0",
+  "description": "A simple plugin to generate HTML table from CSV file by using cy.csv2html('/fixtures/yourfile.csv'), all the data is randomly generated",
   "main": "src",
   "files": [
     "src",
     "commands.js"
   ],
-  "types": "src",
   "scripts": {
     "test": "cypress run",
     "cy:open": "cypress open",
