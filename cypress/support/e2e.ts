@@ -15,7 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+/// <reference path="./index.d.ts" />
 
-const { csv2html } = require('../../src')
+import { csv2html } from '../../src'
 csv2html()
-
