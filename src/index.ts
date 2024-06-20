@@ -1,5 +1,5 @@
-// Import Cypress types
 /// <reference types="cypress" />
+/// <reference path="./index.d.ts" />
 
 /**
  * Converts a CSV string to an HTML table.

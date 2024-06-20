@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+/// <reference path="./index.d.ts" />
 
 import { csv2html } from '../../src'
 csv2html()

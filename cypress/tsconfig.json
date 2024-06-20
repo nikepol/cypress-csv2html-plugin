@@ -8,6 +8,6 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": "."
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "e2e/spec.cy.ts"],
   "exclude": ["node_modules", "dist"]
 }

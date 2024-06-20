@@ -1,11 +1,9 @@
-declare global {
-  namespace Cypress {
-    interface Chainable {
-      /**
-       * Custom command to convert CSV into HTML table with by data-cy attributes.
-       * @example cy.csv2html('/cypress/fixtures/example.csv');
-       */
-      csv2html(value: string): Chainable<JQuery<HTMLElement>>
-    }
+declare namespace Cypress {
+  interface Chainable<Subject = any> {
+    /**
+     * Custom command to convert CSV to HTML table, use a path to your file as a parameter
+     * @example cy.csv2html('cypress/fixtures/yourfile.csv');
+     */
+    csv2html(csvContent: string): Chainable<string>
   }
 }

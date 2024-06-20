@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 describe('template spec', () => {
   it('passes', () => {
     cy.csv2html('cypress/fixtures/customers-100.csv')
