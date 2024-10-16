@@ -29,9 +29,10 @@
   },
   "homepage": "https://github.com/nikepol/cypress-csv2html-plugin#readme",
   "devDependencies": {
+    "@types/cypress": "^0.1.6",
     "cypress": "^13.11.0",
     "prettier": "^3.3.2",
     "semantic-release": "^24.0.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.6.3"
   }
 }

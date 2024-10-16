@@ -1,7 +1,7 @@
 <h2 align=center> cypress-csv2html-plugin </h2>
 <p align="center">
 
-A simple plugin to wrap a CSV file into HTML, this plugin also generates a **data-cy**
+A simple plugin to wrap a CSV file into HTML, this plugin also generates a **data-test**
 
 ## Installation
 
@@ -27,11 +27,11 @@ Then use the custom command `cy.csv2html`
 ```js
 cy.csv2html('cypress/fixtures/example.csv')
 ```
-You can use **data-cy** for your tests
+You can use **data-test** for your tests
 ```
-cy.get('[data-cy="csv-table-container"]') // Check the table values
-cy.get('[data-cy="csv-table-header"]').contains('First Name') // Check the header values
-cy.get('[data-cy="csv-table-cell"]').contains('Linda') // Check the cell value
+cy.get('[data-test="csv-table-container"]') // Check the table values
+cy.get('[data-test="csv-table-header"]').contains('First Name') // Check the header values
+cy.get('[data-test="csv-table-cell"]').contains('Linda') // Check the cell value
 ```
 
 ## Types
