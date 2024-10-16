@@ -52,12 +52,29 @@ function csv2html(name: string = 'csv2html'): void {
           container.style.cssText =
             'position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; background-color: white; z-index: 9999; padding: 20px;'
 
+          // Add data-cy attribute to every cell in the table
           const table = container.querySelector('table')
           if (table) {
-            // Handle the first row (header) and remaining rows with data-test attributes
-            // (code remains unchanged)
-          }
+            // Handle the first row (header)
+            const firstRow = table.querySelector('tr')
+            if (firstRow) {
+              const headerCells = firstRow.querySelectorAll('th, td')
+              headerCells.forEach((cell) => {
+                cell.setAttribute('data-cy', `csv-table-header`)
+              })
+            }
 
+            // Handle the remaining rows
+            const rows = table.querySelectorAll('tr')
+            rows.forEach((row, rowIndex) => {
+              if (rowIndex !== 0) {
+                const cells = row.querySelectorAll('td, th')
+                cells.forEach((cell) => {
+                  cell.setAttribute('data-cy', `csv-table-cell`)
+                })
+              }
+            })
+          }
           doc.body.appendChild(container)
           return cy.wrap(container) // Return the container for further assertions
         })
