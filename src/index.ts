@@ -79,7 +79,7 @@ function csv2html(name: string = 'csv2html'): void {
               })
             }
             doc.body.appendChild(container)
-            return cy.wrap(container) // Return the container for further assertions
+            return cy.wrap(container, { log: false }) // Return the container for further assertions
           })
         })
     )
