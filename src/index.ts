@@ -5,7 +5,7 @@ export const csvToHtmlTable = (csv: string): string => {
       row.split(',').map((cell) => cell.trim()),
     )
     let htmlTable =
-      '<table style="border-collapse: collapse; width: 100%; margin: 25px 0; font-size: 0,rem; font-family: "IBM Plex Sans", sans-serif; min-width: 400px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border-radius: 4px; border: 1px solid #e0e0e0;">'
+      '<table style="border-collapse: collapse; width: 100%; margin: 25px 0; font-size: 0,rem; font-family: "IBM Plex Sans", sans-serif; min-width: 500px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border-radius: 4px; border: 1px solid #e0e0e0;">'
     tableRows.forEach((row, rowIndex) => {
       htmlTable += `<tr style="${rowIndex === 0 ? 'background-color:rgb(0, 0, 0); color: #ffffff;' : ''}">`
       row.forEach((cell) => {
