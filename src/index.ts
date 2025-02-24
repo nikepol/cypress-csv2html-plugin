@@ -5,14 +5,14 @@ export const csvToHtmlTable = (csv: string): string => {
       row.split(',').map((cell) => cell.trim()),
     )
     let htmlTable =
-      '<table border="1" style="border-collapse: collapse; width: 100%;">'
+      '<table style="border-collapse: collapse; width: 100%; margin: 25px 0; font-size: 0,rem; font-family: "IBM Plex Sans", sans-serif; min-width: 400px; background-color: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border-radius: 4px; border: 1px solid #e0e0e0;">'
     tableRows.forEach((row, rowIndex) => {
-      htmlTable += '<tr>'
+      htmlTable += `<tr style="${rowIndex === 0 ? 'background-color:rgb(0, 0, 0); color: #ffffff;' : ''}">`
       row.forEach((cell) => {
         if (rowIndex === 0) {
-          htmlTable += `<th style="padding: 8px; text-align: left;">${cell}</th>`
+          htmlTable += `<th style="padding: 12px 16px; text-align: left; font-weight: 400; border-bottom: 2px solid #d1d1d6; font-size: 0.9em; color: #ffffff;">${cell}</th>`
         } else {
-          htmlTable += `<td style="padding: 8px; text-align: left;">${cell}</td>`
+          htmlTable += `<td style="padding: 12px 16px; text-align: left; border-bottom: 1px solid #d1d1d6; font-size: 1em; background-color: #f4f4f4; color: #333;">${cell}</td>`
         }
       })
       htmlTable += '</tr>'
